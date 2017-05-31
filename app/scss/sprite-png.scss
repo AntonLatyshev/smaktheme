@@ -1,0 +1,144 @@
+
+%icon-analyse {
+  background-image: url(../images/sprite.png);
+  background-position: -98px 0px;
+  width: 42px;
+  height: 45px;
+}
+%icon-deliver {
+  background-image: url(../images/sprite.png);
+  background-position: -48px -98px;
+  width: 45px;
+  height: 36px;
+}
+%icon-develop {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -98px;
+  width: 43px;
+  height: 40px;
+}
+%icon-develop_h {
+  background-image: url(../images/sprite.png);
+  background-position: -50px -51px;
+  width: 43px;
+  height: 40px;
+}
+%icon-finalyse {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 44px;
+  height: 46px;
+}
+%icon-gr_design {
+  background-image: url(../images/sprite.png);
+  background-position: -145px -47px;
+  width: 39px;
+  height: 39px;
+}
+%icon-gr_design_h {
+  background-image: url(../images/sprite.png);
+  background-position: -145px -91px;
+  width: 39px;
+  height: 39px;
+}
+%icon-photo {
+  background-image: url(../images/sprite.png);
+  background-position: -44px -143px;
+  width: 39px;
+  height: 32px;
+}
+%icon-photo_h {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -143px;
+  width: 39px;
+  height: 32px;
+}
+%icon-preparing {
+  background-image: url(../images/sprite.png);
+  background-position: -49px 0px;
+  width: 44px;
+  height: 44px;
+}
+%icon-testing {
+  background-image: url(../images/sprite.png);
+  background-position: -145px 0px;
+  width: 40px;
+  height: 42px;
+}
+%icon-wb_design {
+  background-image: url(../images/sprite.png);
+  background-position: -98px -51px;
+  width: 40px;
+  height: 36px;
+}
+%icon-wb_design_h {
+  background-image: url(../images/sprite.png);
+  background-position: -98px -98px;
+  width: 40px;
+  height: 36px;
+}
+%icon-working {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -51px;
+  width: 45px;
+  height: 42px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  %icon-analyse {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-deliver {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-develop {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-develop_h {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-finalyse {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-gr_design {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-gr_design_h {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-photo {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-photo_h {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-preparing {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-testing {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-wb_design {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-wb_design_h {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+  %icon-working {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 185px 175px;
+  }
+}

@@ -1,0 +1,43 @@
+.principles {
+  background-color: #131a1d;
+  padding: 65px 0;
+  &__holder {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    @include font(osw,30,$main,false,false,700);
+    margin: 0 0 25px;
+  }
+  &__text {
+    text-align: center;
+    @include font(osw,16,#fff,false,24,200);
+    margin: 0 0 55px;
+  }
+  &__list {
+    @include flex(row, nowrap, space-between, center);
+  }
+  &__item {
+    padding: 0 10px;
+    text-align: center;
+  }
+  &__img {
+    width: 100%;
+    height: 55px;
+    margin: 0 0 25px;
+    position: relative;
+    svg {
+      fill: $main;
+      width: 30px;
+      height: 30px;
+    }
+    &::after {
+      @extend %pseudo;
+      top: 50%;
+      left: 50%;
+    }
+  }
+}

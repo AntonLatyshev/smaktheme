@@ -1,0 +1,62 @@
+.header {
+  display: block;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  font-family: 'Oswald', sans-serif;
+  padding: 15px 0 25px;
+  &__holder {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    @extend %clearfix;
+  }
+  &__logo {
+    float: left;
+    width: 105px;
+    height: 59px;
+    background-image: url(../images/header-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    a {
+      display: block;
+      height: 100%;
+    }
+  }
+  &__nav {
+    float: right;
+  }
+  &__list {
+    @extend %clearfix;
+    @extend %clear-list;
+  }
+  &__item {
+    float: left;
+    position: relative;
+    &:nth-child(1n+2)::before {
+      @extend %pseudo;
+      width: 4px;
+      height: 4px;
+      top: 50%;
+      margin: -2px 0 0;
+      left: -2px;
+      background-color: $main;
+    }
+  }
+  &__link {
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding: 20px 20px;
+    color: #fff;
+    transition: color .3s ease-in-out;
+    &:hover ,
+    &.active {
+      color: $main;
+    }
+  }
+}

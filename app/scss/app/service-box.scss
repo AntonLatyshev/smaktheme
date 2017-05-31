@@ -1,0 +1,53 @@
+.service-box {
+  @extend %clearfix;
+  @include flex(row, nowrap, space-between, center);
+  &__item {
+    text-align: center;
+    padding: 0 10px;
+  }
+  &__image {
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    line-height: 102px;
+    text-align: center;
+    border: 1px solid;
+    border-color: $main;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: $main;
+    margin: 0 0 25px;
+    position: relative;
+    transition: background-color .5s ease-in-out, border-color .5s ease-in-out;
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      fill: #fff;
+      width: 40px;
+      height: 40px;
+      transition: fill .3s ease-in-out;
+    }
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    &:hover {
+      .service-box__image {
+        background-color: #fff;
+        border-color: #000;
+      }
+      svg {
+        fill: $main;
+      }
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    @include font(osw,20,#000,false,false,700);
+    text-align: center;
+    margin: 0 0 25px;
+  }
+  &__text {
+    @include font(osw,16,#515151,false,24,200);
+  }
+}
