@@ -3,21 +3,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 1050px;
-  position: relative;
+  @include flex(row, wrap, center, center);
   &__holder {
     background-color: rgba(0,0,0,0.5);
     padding: 65px 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
+    width: 100%;
   }
   &__holder-text {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    @include flex(column, wrap, center, center);
   }
   &__title {
     display: inline-block;
@@ -39,7 +32,7 @@
     height: 60px;
     background-color: $main;
     @include font(osw,20,#000,false,60,700);
-    transition: color, background-color .3s ease-in-out;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
     &:hover {
       background-color: #fff;
       color: $main;

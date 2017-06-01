@@ -13,10 +13,9 @@
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    @extend %clearfix;
+    @include flex(row, nowrap, space-between, flex-start);
   }
   &__logo {
-    float: left;
     width: 105px;
     height: 59px;
     background-image: url(../images/header-logo.png);
@@ -27,15 +26,11 @@
       height: 100%;
     }
   }
-  &__nav {
-    float: right;
-  }
   &__list {
-    @extend %clearfix;
+    @include flex(row, nowrap, space-between, flex-start);
     @extend %clear-list;
   }
   &__item {
-    float: left;
     position: relative;
     &:nth-child(1n+2)::before {
       @extend %pseudo;

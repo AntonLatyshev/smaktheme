@@ -1,0 +1,39 @@
+.works {
+  padding: 65px 0;
+  &__holder {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    @include font(osw,16,#515151,false,false,400);
+    margin: 0 0 25px;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    @include font(osw,30,#000,false,false,700);
+    margin: 0 0 55px;
+    position: relative;
+    &::after {
+      @extend %pseudo;
+      bottom: -23px;
+      left: 50%;
+      margin: 0 0 0 -85px;
+      width: 170px;
+      height: 3px;
+      background-color: $main;
+    }
+  }
+  &__text {
+    max-width: 920px;
+    margin: 0 auto 65px;
+    text-align: center;
+    @include font(osw,16,#515151,false,24,200);
+    p {
+      margin: 0;
+    }
+  }
+}

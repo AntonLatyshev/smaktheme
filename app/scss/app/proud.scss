@@ -1,0 +1,39 @@
+.proud {
+  padding: 60px 0;
+  @include flex(row, nowrap, center, center);
+  background-color: $d_bg;
+  &__holder {
+    max-width: 1170px;
+    width: 100%;
+    text-align: center;
+  }
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    @include font(osw,30,#fff,false,false,700);
+    margin: 0 0 25px;
+  }
+  &__text {
+    text-align: center;
+    @include font(osw,16,#fff,false,24,200);
+    margin: 0 0 55px;
+  }
+  &__list {
+    @include flex(row, nowrap, space-between, center);
+  }
+  &__item {
+    box-sizing: border-box;
+    border: 1px solid $main;
+    width: 270px;
+    height: 142px;
+    @include flex(column, wrap, center, center);
+  }
+  &__number {
+    @include font(osw,30,#fff,false,false,700);
+    margin: 0 0 15px;
+  }
+  &__name {
+    text-transform: uppercase;
+    @include font(osw,16,$main,false,false,400);
+  }
+}

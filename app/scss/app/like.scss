@@ -1,0 +1,35 @@
+.like {
+  padding: 60px 0;
+  @include flex(row, nowrap, center,center);
+  &__holder {
+    max-width: 1170px;
+    width: 100%;
+    text-align: center;
+  }
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    @include font(osw,30,#000,false,false,700);
+    margin: 0 0 25px;
+  }
+  &__text {
+    text-align: center;
+    @include font(osw,16,#000,false,24,200);
+    margin: 0 0 55px;
+  }
+  &__btn-link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 170px;
+    text-align: center;
+    height: 60px;
+    background-color: $main;
+    @include font(osw,20,#fff,false,60,400);
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    &:hover {
+      background-color: #515151;
+      color: $main;
+    }
+  }
+}
